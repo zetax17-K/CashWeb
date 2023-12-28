@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    border: 1px solid black;
+    padding: 20px;
+    height: 95%;
+    width: 95%;
+}
+
+.cabeza {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom, #00337e, #00428e, #00529d, #0062ac, #0072bb);
+    color: white;
+    width: 95%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0%;
+    border-radius: 15px;
+}
+
+.cabeza > p,
+h1 {
+    margin-top: 0%;
+}
+
+.cabeza > p {
+    font-size: 15px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #00337e, #00428e, #00529d, #0062ac, #0072bb);
+    color: white;
+    width: 90%;
+    height: 100%;
+    padding: 1px 1px;
+    border-radius: 15px;
+}
+
+.nav > .producto {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    background: white;
+    color: #0F9CE8;
+    transform: scale(1.2);
+}
+
+li {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 20%;
+}
+
+.cuerpo {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 14% 80%;
+    grid-column-gap: 0%;
+    margin-top: 0%;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    overflow: auto;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 10px 10px 10px #d0d0d0;
+    width: 105%;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-left: 0% 0%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.item {
+    display: block;
+    background: #efefef;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px #efefef;
+    border-radius: 15px;
+    width: 150px;
+    height: 300px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item:last-child {
+    margin-right: 20px;
+}
+
+.contenido > p,
+input,
+button,
+img,
+h2,
+p {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.contenido > .item {
+    top: 1%;
+    left: 2%;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 132, 255);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.contenido-flotante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(204, 204, 204);
+    width: 80%;
+    height: 55%;
+    border: 1px solid black;
+    top: 15%;
+    left: 10%;
+}
+
+.contenido-flotante > h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contenido-flotante > h2:hover {
+    transform: scale(1.8);
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: #0F9CE8;
+    color: white;
+    border: 1px solid #0F9CE8;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.ms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+/* Agrega estos estilos para el botón de eliminar */
+.eliminar {
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background: #0F9CE8;
+    color: white;
+    border: 1px solid #0F9CE8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.eliminar:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustar pantalla */
+
+@media only screen and (max-width: 300px) {
+    .cabeza {
+        width: 70%;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+
+    .cabeza {
+        width: 95%;
+    }
+
+    .cuerpo {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        padding: 2px;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(to right bottom, #00337e, #00428e, #00529d, #0062ac, #0072bb);
+        color: white;
+        width: 100%;
+        height: 60px;
+        padding: 5px 5px;
+        border-radius: 15px;
+    }
+
+    .nav > .producto {
+        width: 20%;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .producto:hover {
+        background: white;
+        color: #0F9CE8;
+        transform: scale(1.1);
+    }
+
+    li {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    li:last-child {
+        margin-right: 20px;
+    }
+
+    li {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 1%;
+    }
+
+    .cuerpo {
+        width: 90%;
+        margin-left: 3%;
+    }
+}
